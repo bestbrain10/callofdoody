@@ -2,7 +2,7 @@
 
 ## Todo
 
-- [ ] Create Cars CRUD API
+- [x] Create Cars CRUD API
 - [ ] Create Character CRUD API
 - [ ] Create Weapons CRUD API
     - SMG
