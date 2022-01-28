@@ -16,7 +16,7 @@ var Collections DatabaseCollections
 var Client *mongo.Client
 
 func ConnectDatabase() error {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://bundle:bundledbpassword@localhost:21011/DEV"))
+	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://bundle:bundledbpassword@localhost:27011/DEV?authDb=admin"))
 	if err != nil {
 		return err
 	}
