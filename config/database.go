@@ -15,8 +15,8 @@ type DatabaseCollections struct {
 var Collections DatabaseCollections
 var Client *mongo.Client
 
-func ConnectDatabase() error {
-	client, err := mongo.NewClient(options.Client().ApplyURI("mongodb://bundle:bundledbpassword@localhost:27011/DEV?authDb=admin"))
+func ConnectDatabase(dbURL string) error {
+	client, err := mongo.NewClient(options.Client().ApplyURI(dbURL))
 	if err != nil {
 		return err
 	}
