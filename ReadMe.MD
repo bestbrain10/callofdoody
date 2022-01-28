@@ -16,3 +16,5 @@
     - Pistol
 - [ ] Create Weapon Config API
 - [ ] Create Weapon Config Simulator
+- [ ] Add Unit test
+- [ ] Add integration tests
